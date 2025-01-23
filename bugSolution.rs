@@ -1,0 +1,1 @@
+fn main() {    let mut x = 5;    {        let ref_x = &mut x;        *ref_x = 10;    }    println!("{}", x); // This will correctly print 10}    //This removes the nested mutable reference, simplifying the code and making it less prone to error. 
